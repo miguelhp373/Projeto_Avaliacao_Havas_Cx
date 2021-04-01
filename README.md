@@ -16,10 +16,6 @@
 
 <br>
 
-## :dart: About ##
-
-Describe your project
-
 ## :rocket: Technologies ##
 A seguir as ferramentas usadas no projeto:
 
