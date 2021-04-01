@@ -1,5 +1,3 @@
-<?php require_once('source/Api/index.php'); ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,28 +26,37 @@
 <body>
     <header>
         <nav>
-            <div class="brand-name">
-                <h1>API Posts</h1>
-            </div>
+            <a href="#" style="padding: 8px;margin-left: 20px;">
+                <div class="brand-name">
+                    <h1>API Posts</h1>
+                </div>
+            </a>
         </nav>
     </header>
     <main>
-        <?php foreach ($getPosts as $items) { ?>
-            <div class="container">
-                <div class="content">
-                    <header>
-                        <div class="user">
-                            <span> <i class="far fa-user-circle" style="font-size: 2rem;"></i> &nbsp; User<?php echo $items->userId; ?></span>
+        <?php require_once('source/Api/index.php'); ?>
+        <?php if ($getPosts != null) { ?>
+            <?php foreach ($getPosts as $items) { ?>
+                <a href="<?php echo "source/view/index.php?id=" . $items->id; ?>" title='Abrir'>
+                    <div class="container">
+                        <div class="content">
+                            <header>
+                                <div class="user">
+                                    <span> <i class="far fa-user-circle" style="font-size: 2rem;"></i> &nbsp; User<?php echo $items->userId; ?></span>
+                                </div>
+                            </header>
+                            <div class="title">
+                                <span><?php echo $items->title; ?></span>
+                            </div>
+                            <div class="body">
+                                <span><?php echo $items->body ?></span>
+                            </div>
                         </div>
-                    </header>
-                    <div class="title">
-                        <span><?php echo $items->title; ?></span>
                     </div>
-                    <div class="body">
-                        <span><?php echo $items->body ?></span>
-                    </div>
-                </div>
-            </div>
+                </a>
+            <?php } ?>
+        <?php } else { ?>
+            <center><span>Não Existem Posts No Momento Volte Mais Tarde, Erro Ao Tentar se Comunicar com a Api.</span></center>
         <?php } ?>
     </main>
 </body>

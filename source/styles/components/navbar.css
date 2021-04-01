@@ -23,7 +23,7 @@ header>nav{
         align-items: flex-start;
     
     }
-    header>nav>.brand-name{
+    .home-index-return>.brand-name{
         margin-left: 20px;
         padding:10px;
     }
