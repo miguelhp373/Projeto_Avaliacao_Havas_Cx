@@ -1,0 +1,59 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    margin-top: 25px;
+    width: 80%;
+    height: 400px;
+    background-color: #dcdde1;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content>header>.user{
+    margin-top: -100px;
+}
+
+.content>header>.user>span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content>.title{
+    margin-top: 50px;
+}
+
+.content>.title>span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content>.body{
+    margin-top: 41px;
+}
+
+.content>.body>span{
+    font-size: 1.2rem;
+}
