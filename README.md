@@ -47,6 +47,17 @@ $ No navegador use o caminho localhost:80/Projeto_Avaliacao_Havas_Cx/index.php
 
 # O server ira inicializar na porta <http://localhost:80>
 ```
+## Perguntas
+
+1. Descreva possíveis otimizações de performance que você poderia fazer no seu
+próprio código.
+
+- Poderia usar o ajax para fazer requisições http se, precisar atualizar a pagina, utilizar bibliotecas javascript para otimizar a interface
+
+2. O que você poderia ter melhorado?
+
+- Poderia melhorar o design utilizando frameworks, e o código, deixando o mais limpo, Utilizar da técnica SPA para uma melhor experiência do usuário.
+
 
 ## :memo: License ##
 
